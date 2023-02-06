@@ -1,0 +1,40 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    display: grid;
+    justify-content: center;
+    margin-top: 125px;
+    background-color: #637bae;
+    font-family: "lato", sans-serif;
+    background-image:
+        url("https://i.postimg.cc/8z4DYzW4/giorgio-trovato-Wyxq-Qpy-FNk8-unsplash.jpg;");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.body__button {
+    max-width: 120px;
+    border-radius: 25px;
+    background-color: #637bae6e;
+    font-weight: bold;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.body__button:hover {
+    background-color: #637bae;
+    transform: scale(1.1);
+}
+
+.sun {
+    background-image: url(https://i.postimg.cc/wBrKx1wZ/images.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
