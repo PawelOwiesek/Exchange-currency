@@ -1,4 +1,8 @@
 {
+  const showWelcomeMessage = () => {
+    console.log("Hello");
+  };
+
   const changeBackgroungImage = () => {
     const body = document.querySelector(".js-body");
     const imageButton = document.querySelector(".js-imageButton");
@@ -90,6 +94,7 @@
   };
 
   const init = () => {
+    showWelcomeMessage();
     changeBackgroungImage();
     const form = document.querySelector(".js-form");
     form.addEventListener("submit", onFormSubmit);
