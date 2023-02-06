@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Exchange currency</title>
+  </head>
+  <body class="body js-body">
+    <button class="body__button js-imageButton">Change image</button>
+    <section class="calculator">
+      <h1 class="calculator__title">Currency calculator</h1>
+      <form class="calculator__form js-form">
+        <fieldset class="calculator__fieldset">
+          <p>
+            <label class="calculator__fieldset--label"
+              >Enter the amount of cash:</label
+            >
+            <input
+              type="number"
+              class="calculator__fieldset--field js-amount"
+              step="any"
+              min="1"
+              required
+            />
+          </p>
+          <p>
+            <label class="calculator__fieldset--label">Your currency:</label>
+            <select class="calculator__fieldset--field js-firstValue">
+              <option value="Eur">Euro</option>
+              <option value="Usd">U.S. Dollar</option>
+              <option value="Gbp">British pound</option>
+              <option value="Pln">Polish zloty</option>
+            </select>
+          </p>
+          <p>
+            <label class="calculator__fieldset--label">Convert to:</label>
+            <select class="calculator__fieldset--field js-secondValue">
+              <option value="Eur">Euro</option>
+              <option value="Usd">U.S. Dollar</option>
+              <option value="Gbp">British pound</option>
+              <option value="Pln">Polish zloty</option>
+            </select>
+          </p>
+          <button class="calculator__form--button">Recalculate</button>
+        </fieldset>
+        <p class="calculator__form--paragraph">
+          Exchange rate:<strong
+            class="calculator__form--rate js-exchangeRate"
+          ></strong>
+        </p>
+
+        <p class="calculator__form--paragraph">
+          Amount after conversion:<strong
+            class="calculator__form--rate js-result"
+          ></strong>
+        </p>
+      </form>
+    </section>
+  </body>
+</html>
