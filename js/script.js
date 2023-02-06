@@ -7,7 +7,7 @@
     });
   };
   
-  changeBackgroungImage();
+  
   
   const form = document.querySelector(".js-form");
   const amountElement = document.querySelector(".js-amount");
@@ -85,5 +85,9 @@
     exchangeRate.innerText=`${outcome.toFixed(2)}`;
   });
   
+  const init=()=>{
+    changeBackgroungImage();
+  };
+  init();
 }
 
