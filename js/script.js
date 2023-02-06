@@ -6,88 +6,93 @@
       body.classList.toggle("sun");
     });
   };
-  
-  
-  
-  const form = document.querySelector(".js-form");
-  const amountElement = document.querySelector(".js-amount");
-  const firstValue = document.querySelector(".js-firstValue");
-  const secondValue = document.querySelector(".js-secondValue");
-  let outcome;
-  const result = document.querySelector(".js-result");
-  const exchangeRate=document.querySelector(".js-exchangeRate");
-  
-  
-  form.addEventListener("submit", (event) => {
+
+  const onFormSubmit = (event) => {
     event.preventDefault();
-    const currency1 = firstValue.value;
+    const amountElement = document.querySelector(".js-amount");
     const amount = +amountElement.value;
+    const outcome = calculateResult();
+    const result = document.querySelector(".js-result");
+    updateResultText(outcome, amount, result);
+    updateExchangeRateText(outcome);
+  };
+
+  const calculateResult = () => {
+    const firstValue = document.querySelector(".js-firstValue");
+    const secondValue = document.querySelector(".js-secondValue");
+    const currency1 = firstValue.value;
     const currency2 = secondValue.value;
     const Eur = 4.692;
     const Usd = 4.2928;
     const Gbp = 5.2571;
     const Pln = 1;
     const currencyChange = `${currency1}/${currency2}`;
-  
+
     switch (currencyChange) {
       case "Eur/Eur":
-        outcome = Eur / Eur;
-        break;
+        return Eur / Eur;
+
       case "Eur/Usd":
-        outcome = Eur / Usd;
-        break;
+        return Eur / Usd;
+
       case "Eur/Gbp":
-        outcome = Eur / Gbp;
-        break;
+        return Eur / Gbp;
+
       case "Eur/Pln":
-        outcome = Eur / Pln;
-        break;
+        return Eur / Pln;
+
       case "Usd/Usd":
-        outcome = Usd / Usd;
-        break;
+        return Usd / Usd;
+
       case "Usd/Eur":
-        outcome = Usd / Eur;
-        break;
+        return Usd / Eur;
+
       case "Usd/Gbp":
-        outcome = Usd / Gbp;
-        break;
+        return Usd / Gbp;
+
       case "Usd/Pln":
-        outcome = Usd / Pln;
-        break;
+        return Usd / Pln;
+
       case "Pln/Pln":
-        outcome = Pln / Pln;
-        break;
+        return Pln / Pln;
+
       case "Pln/Eur":
-        outcome = Pln / Eur;
-        break;
+        return Pln / Eur;
+
       case "Pln/Usd":
-        outcome = Pln / Usd;
-        break;
+        return Pln / Usd;
+
       case "Pln/Gbp":
-        outcome = Pln / Gbp;
-        break;
+        return Pln / Gbp;
+
       case "Gbp/Gbp":
-        outcome = Gbp / Gbp;
-        break;
-      case "GbpPln/Eur":
-        outcome = Gbp/ Eur;
-        break;
-      case "GbpPln/Usd":
-        outcome = Gbp / Usd;
-        break;
-      case "GbpPln/Pln":
-        outcome = Gbp / Pln;
-        break;
+        return Gbp / Gbp;
+
+      case "Gbp/Eur":
+        return Gbp / Eur;
+
+      case "Gbp/Usd":
+        return Gbp / Usd;
+
+      case "Gbp/Pln":
+        return Gbp / Pln;
     }
-  
-    const resultat = outcome * amount;
-    result.innerText = `${resultat.toFixed(2)}`;
-    exchangeRate.innerText=`${outcome.toFixed(2)}`;
-  });
-  
-  const init=()=>{
+  };
+
+  const updateResultText = (outcome, amount, result) => {
+    const calculation = outcome * amount;
+    result.innerText = `${calculation.toFixed(2)}`;
+  };
+
+  const updateExchangeRateText = (calculation) => {
+    const exchangeRate = document.querySelector(".js-exchangeRate");
+    exchangeRate.innerText = `${calculation.toFixed(2)}`;
+  };
+
+  const init = () => {
     changeBackgroungImage();
+    const form = document.querySelector(".js-form");
+    form.addEventListener("submit", onFormSubmit);
   };
   init();
 }
-
