@@ -19,7 +19,7 @@
     const result = document.querySelector(".js-result");
     updateResultText(outcome, amount, result);
     updateExchangeRateText(outcome);
-    document.querySelector(".js-form").reset(); 
+    document.querySelector(".js-form").reset();
     document.querySelector(".js-amount").focus();
   };
 

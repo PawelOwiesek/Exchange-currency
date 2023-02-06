@@ -27,48 +27,54 @@
       <form class="calculator__form js-form">
         <fieldset class="calculator__fieldset">
           <p>
-            <label class="calculator__fieldset--label"
-              >Enter the amount of cash:</label
-            >
-            <input
-              type="number"
-              class="calculator__fieldset--field js-amount"
-              step="any"
-              min="1"
-              required
-            />
+            <label
+              ><span class="calculator__fieldset--label"
+                >Enter the amount of cash:</span
+              >
+              <input
+                type="number"
+                class="calculator__fieldset--field js-amount"
+                step="any"
+                min="1"
+                required
+                autofocus
+            /></label>
           </p>
           <p>
-            <label class="calculator__fieldset--label">Your currency:</label>
-            <select class="calculator__fieldset--field js-firstValue">
-              <option value="Eur">Euro</option>
-              <option value="Usd">U.S. Dollar</option>
-              <option value="Gbp">British pound</option>
-              <option value="Pln">Polish zloty</option>
-            </select>
+            <label
+              ><span class="calculator__fieldset--label">Your currency:</span>
+              <select class="calculator__fieldset--field js-firstValue">
+                <option value="Eur">Euro</option>
+                <option value="Usd">U.S. Dollar</option>
+                <option value="Gbp">British pound</option>
+                <option value="Pln">Polish zloty</option>
+              </select>
+            </label>
           </p>
           <p>
-            <label class="calculator__fieldset--label">Convert to:</label>
-            <select class="calculator__fieldset--field js-secondValue">
-              <option value="Eur">Euro</option>
-              <option value="Usd">U.S. Dollar</option>
-              <option value="Gbp">British pound</option>
-              <option value="Pln">Polish zloty</option>
-            </select>
+            <label
+              ><span class="calculator__fieldset--label">Convert to:</span>
+              <select class="calculator__fieldset--field js-secondValue">
+                <option value="Eur">Euro</option>
+                <option value="Usd">U.S. Dollar</option>
+                <option value="Gbp">British pound</option>
+                <option value="Pln">Polish zloty</option>
+              </select>
+            </label>
           </p>
           <button class="calculator__form--button">Recalculate</button>
-        </fieldset>
-        <p class="calculator__form--paragraph">
-          Exchange rate:<strong
-            class="calculator__form--rate js-exchangeRate"
-          ></strong>
-        </p>
+          <p class="calculator__form--paragraph">
+            Exchange rate:<strong
+              class="calculator__form--rate js-exchangeRate"
+            ></strong>
+          </p>
 
-        <p class="calculator__form--paragraph">
-          Amount after conversion:<strong
-            class="calculator__form--rate js-result"
-          ></strong>
-        </p>
+          <p class="calculator__form--paragraph">
+            Amount after conversion:<strong
+              class="calculator__form--rate js-result"
+            ></strong>
+          </p>
+        </fieldset>
       </form>
     </section>
   </body>
