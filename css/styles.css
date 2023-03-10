@@ -12,7 +12,7 @@ html {
     margin-top: 125px;
     font-family: "lato", sans-serif;
     background-image:
-        url("https://i.postimg.cc/8z4DYzW4/giorgio-trovato-Wyxq-Qpy-FNk8-unsplash.jpg;");
+        url("https://i.postimg.cc/wBrKx1wZ/images.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -33,7 +33,7 @@ html {
 }
 
 .sun {
-    background-image: url(https://i.postimg.cc/wBrKx1wZ/images.jpg);
+    background-image: url("https://i.postimg.cc/8z4DYzW4/giorgio-trovato-Wyxq-Qpy-FNk8-unsplash.jpg;");
     background-repeat: no-repeat;
     background-size: cover;
 }
