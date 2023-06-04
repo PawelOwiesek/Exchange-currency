@@ -13,7 +13,7 @@ html {
   justify-content: center;
   margin-top: 125px;
   font-family: "lato", sans-serif;
-  background-image: url("https://i.postimg.cc/wBrKx1wZ/images.jpg");
+  background-image: url("https://i.postimg.cc/j55CcnT5/ritam-baishya-ROVBDer29-PQ-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -22,10 +22,11 @@ html {
 .body__button {
   max-width: 120px;
   border-radius: 25px;
-  background-color: #637bae6e;
+  background-color: #0c4bff99;
   font-weight: bold;
   transition: 1s;
   cursor: pointer;
+  border: none;
 }
 
 .body__button:hover {
@@ -34,7 +35,7 @@ html {
 }
 
 .sun {
-  background-image: url("https://i.postimg.cc/8z4DYzW4/giorgio-trovato-Wyxq-Qpy-FNk8-unsplash.jpg;");
+  background-image: url("https://i.postimg.cc/9XLhj1vt/john-mcarthur-ROQz-KIAd-Y78-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
