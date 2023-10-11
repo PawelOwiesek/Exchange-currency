@@ -5,9 +5,11 @@
 
   const changeBackgroungImage = () => {
     const body = document.querySelector(".js-body");
+    const header = document.querySelector(".js-header");
     const imageButton = document.querySelector(".js-imageButton");
     imageButton.addEventListener("click", () => {
       body.classList.toggle("sun");
+      header.classList.toggle("calculator__header");
     });
   };
 

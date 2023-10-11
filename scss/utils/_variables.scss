@@ -1,2 +1,10 @@
 $font-primary-size:22px;
 $font-primary-weight:900;
+
+@mixin position($type,$top,$left,$bottom,$right){
+    position:$type;
+    top:$top;
+    left: $left;
+    bottom: $bottom;
+    right: $right;
+}

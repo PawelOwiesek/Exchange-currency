@@ -1,3 +1,4 @@
+@import "../utils/variables";
 html {
     box-sizing: border-box;
   }
@@ -20,10 +21,14 @@ html {
   }
   
   .body__button {
-    max-width: 120px;
-    border-radius: 25px;
-    background-color: #0c4bff99;
-    font-weight: bold;
+    @include position(absolute,50px,50px,0,0);
+    max-width:220px;
+    width:100%;
+    height:30px;
+    border-radius: 5px;
+    background-color: #0c4dffdb;
+    font-size: $font-primary-size;
+    font-weight: $font-primary-weight;
     transition: 1s;
     cursor: pointer;
     border: none;
