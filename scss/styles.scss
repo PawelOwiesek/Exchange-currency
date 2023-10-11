@@ -1,0 +1,44 @@
+@import "./components/calculator";
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  ::after,
+  ::before {
+    box-sizing: inherit;
+  }
+  
+  .body {
+    display: grid;
+    justify-content: center;
+    margin-top: 125px;
+    font-family: "lato", sans-serif;
+    background-image: url("https://i.postimg.cc/j55CcnT5/ritam-baishya-ROVBDer29-PQ-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .body__button {
+    max-width: 120px;
+    border-radius: 25px;
+    background-color: #0c4bff99;
+    font-weight: bold;
+    transition: 1s;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .body__button:hover {
+    background-color: #637bae;
+    transform: scale(1.1);
+  }
+  
+  .sun {
+    background-image: url("https://i.postimg.cc/9XLhj1vt/john-mcarthur-ROQz-KIAd-Y78-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
